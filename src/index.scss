@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: "InterBold";
+    src: url("./assets/interbold.ttf")
+}
+
+@font-face {
+    font-family: "InterItalic";
+    src: url("./assets/interitalic.ttf")
+}
+
+@font-face {
+    font-family: "InterLight";
+    src: url("./assets/interlight.ttf")
+}
+
+:root {
+    background-color: rgb(228, 228, 228);
+}
+
+body {
+    height: 3000px;
+    overflow: visible;
+}
+
+
+.test {
+    font-family: "InterLight";
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    align-self: flex-start;
+    height: 900px;
+    // margin-top: 7rem;
+    top: 1rem;
+    margin-top: 1rem;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: red;
+    z-index: 1000;
+}
+
+.test {
+    height: 500px; 
+    background-color: white;
+    border-radius: 10px;
+}
+
+.parent-container {
+    overflow: visible;
+    position: relative;
+    height: 2000px;
+}
+
+.rightpart {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    flex: 1;
+}
+
+.leftpart {
+    justify-content: center;
+    flex: 1;
+    flex-direction: column;
+    font-family: 'InterBold';
+    font-size: 5rem;
+    text-shadow: 1px 4px 3px rgba(0, 0, 0, 0.3);
+    line-height: 1;
+    padding: 20px;
+    display: "inline-flexbox";
+}
+
+.inverted-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: white;
+    text-shadow: 
+    4px 4px 0 black, 
+    -2px -1px 0 black, 
+    -2px 2px 0 black, 
+    2px -2px 0 black; 
+}
+
+
+
+
+
